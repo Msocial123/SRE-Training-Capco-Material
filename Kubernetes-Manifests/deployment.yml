@@ -29,7 +29,7 @@ spec: # Defines the Deployment Behaviour
 apiVersion: v1
 kind: Service
 metadata:
-  name: Cap-flower-app-svc
+  name: cap-flower-app-svc
 spec:
   selector:
     app: web
