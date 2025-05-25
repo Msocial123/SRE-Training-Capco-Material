@@ -1,18 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mohan-flower-app-deployment
-  labels:
-    app: example
+  name: murali-flower-app-deployment
 spec: # Defines the Deployment Behaviour
   replicas: 3
   selector:
     matchLabels:
-      app: murali
+      app: web
   template:
     metadata:
       labels:
-        app: murali
+        app: web
     spec: # Define the Pod behaviour
       containers:
       - name: cart-app
@@ -31,10 +29,10 @@ spec: # Defines the Deployment Behaviour
 apiVersion: v1
 kind: Service
 metadata:
-  name: murali-flower-app-svc
+  name: Cap-flower-app-svc
 spec:
   selector:
-    app: murali
+    app: web
   ports:
   - port: 3016 # Service Port 
     targetPort: 3015 # Container Port 
