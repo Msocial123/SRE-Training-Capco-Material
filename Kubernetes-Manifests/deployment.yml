@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: murali-flower-app-deployment
+  name: mohan-flower-app-deployment
   labels:
     app: example
 spec: # Defines the Deployment Behaviour
